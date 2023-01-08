@@ -1,0 +1,8 @@
+
+---
+ - name: This Plyabook is to a create  user
+   hosts: all
+   become: true
+   tasks:
+    - name: creating is a user rohit
+      user: name=rohit  

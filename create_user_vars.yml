@@ -1,0 +1,11 @@
+
+---
+ - name: My Test Plyabook
+   hosts: all
+   become: true
+   vars:  
+     user: Sunnay
+   tasks:
+   - name: creating user {{user}}
+     user:
+       name: "{{user}}"
